@@ -5,18 +5,25 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		int num = sc.nextInt();
-		int num1 = 20 - num;
+		char s = sc.next().charAt(0);
+		int age = sc.nextInt();
 
-		if (num >= 20) {
-			System.out.println("adult");
-		} else {
-			System.out.println(num1 + " years later");
-		}
 		sc.close();
 
-	}
+		if (age >= 18) {
+			if (s == 'M') {
+				System.out.println("MAN");
+			} else {
+				System.out.println("WOMAN");
+			}
+		} else {
+			if (s == 'M') {
+				System.out.println("BOY");
+			} else {
+				System.out.println("GIRL");
+			}
+		}
 
+	}
 }
