@@ -8,7 +8,7 @@ public class Main {
 		String inp = sc.next();
 		sc.close();
 
-		System.out.println(inp);
+//		System.out.println(inp);
 
 		// case 2.
 		inp = inp.toUpperCase();
